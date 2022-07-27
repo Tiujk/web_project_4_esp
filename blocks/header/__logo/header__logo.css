@@ -1,13 +1,13 @@
 .header__logo {
-    
+    margin: 0;
+    min-width: 7.875rem;
+    max-height: 1.5rem;
+    padding-left: 1.6875rem;
 }
 
-/*320px
-@media screen and (min-width: 17rem) and (max-width: 29rem) {
+/*1280px
+@media screen and (min-width: ) and (max-width: ) {
     .header__logo {
-        padding: 1.25rem 0 0;
-        min-width: 12.5rem;
-        max-height: 3.2407rem;
-    }
-    
+        
+    }    
 }*/
