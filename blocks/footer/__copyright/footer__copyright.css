@@ -1,15 +1,14 @@
 .footer__copyright {
     margin: 0;
-    padding-bottom: 1.5rem;
+    min-width: 88.125%;
     font-family: "Inter", "Helvetica", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.14;
-    text-align: center;
-    color: #FFF;
+    line-height: 1.21;
+    color: #545454;
 }
 
-/*320px
+/*1280px
 @media screen and (max-width: 30rem) {
     .footer__copyright {
         line-height: 1;
