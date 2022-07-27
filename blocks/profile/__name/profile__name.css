@@ -1,0 +1,9 @@
+.profile__name {
+    margin: 0;
+    font-family: "Inter", "Helvetica", "Arial", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.22;
+    color: #FFF;
+    padding-right: 10px;
+}

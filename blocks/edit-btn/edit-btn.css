@@ -1,0 +1,11 @@
+.edit-btn {
+    margin: 0;
+    max-width: 18px;
+    min-height: 18px;
+    border: 1px solid #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    align-self: center;
+}

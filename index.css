@@ -3,5 +3,14 @@
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/content/content.css);
+@import url(./blocks/profile/profile.css);
+@import url(./blocks/profile/__avatar/profile__avatar.css);
+@import url(./blocks/profile/__info/profile__info.css);
+@import url(./blocks/profile/__name/profile__name.css);
+@import url(./blocks/profile/__profession/profile__profession.css);
+@import url(./blocks/edit-btn/edit-btn.css);
+@import url(./blocks/edit-btn/__image/edit-btn__image.css);
+@import url(./blocks/add-btn/add-btn.css);
+@import url(./blocks/add-btn/__image/add-btn__image.css);
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);

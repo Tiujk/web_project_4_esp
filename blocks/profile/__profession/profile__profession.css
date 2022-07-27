@@ -1,0 +1,9 @@
+.profile__profession {
+    margin: 0;
+    font-family: "Inter", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.21;
+    color: #FFF;
+    padding-bottom: 36px;
+}
