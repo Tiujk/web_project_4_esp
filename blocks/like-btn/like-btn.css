@@ -1,0 +1,11 @@
+.like-btn {
+    margin: 0;
+    max-width: 21px;
+    max-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    align-self: center;
+}

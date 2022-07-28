@@ -12,5 +12,11 @@
 @import url(./blocks/edit-btn/__image/edit-btn__image.css);
 @import url(./blocks/add-btn/add-btn.css);
 @import url(./blocks/add-btn/__image/add-btn__image.css);
+@import url(./blocks/cards-gallery/cards-gallery.css);
+@import url(./blocks/card/card.css);
+@import url(./blocks/card/__image/card__image.css);
+@import url(./blocks/card/__info/card__info.css);
+@import url(./blocks/card/__name/card__name.css);
+@import url(./blocks/like-btn/like-btn.css);
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);
