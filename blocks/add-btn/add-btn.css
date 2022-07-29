@@ -9,3 +9,13 @@
     align-items: center;
     background-color: transparent;
 }
+
+/*1280px*/
+@media screen and (min-width: 900px) {
+    .add-btn {
+        max-width: 150px;
+        min-width: 150px;
+        max-height: 50px;
+        grid-area: add-btn;
+    }
+}

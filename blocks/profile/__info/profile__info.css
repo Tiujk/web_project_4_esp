@@ -5,3 +5,12 @@
     display: flex;
     justify-content: center;
 }
+
+/*1280px*/
+@media screen and (min-width: 900px) {
+    .profile__info {
+        grid-area: info;
+        padding: 0;
+        justify-content: flex-start;
+    }
+}

@@ -9,3 +9,11 @@
     background-color: transparent;
     align-self: center;
 }
+
+/*1280px*/
+@media screen and (min-width: 720px) {
+    .edit-btn {
+        min-width: 24px;
+        min-height: 24px;
+    }
+}

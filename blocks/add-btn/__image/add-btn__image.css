@@ -1,0 +1,11 @@
+.add-btn__image {
+    margin: 0;
+    max-width: 16px;
+}
+
+/*1280px*/
+@media screen and (min-width: 720px) {
+    .add-btn__image {
+        min-width: 22px;
+    }
+}

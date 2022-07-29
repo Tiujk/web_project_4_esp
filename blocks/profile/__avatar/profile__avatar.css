@@ -3,3 +3,10 @@
     max-width: 120px;
     border-radius: 50%;
 }
+
+/*1280px*/
+@media screen and (min-width: 900px) {
+    .profile__avatar {
+        grid-area: avatar;
+    }
+}

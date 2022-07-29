@@ -8,9 +8,9 @@
     color: #545454;
 }
 
-/*1280px
-@media screen and (max-width: 30rem) {
+@media screen and (min-width: 880px) {
     .footer__copyright {
-        line-height: 1;
-    }    
-}*/
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}

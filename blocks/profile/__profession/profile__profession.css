@@ -7,3 +7,19 @@
     color: #FFF;
     padding-bottom: 36px;
 }
+
+/*1280px*/
+@media screen and (min-width: 720px) {
+    .profile__profession {
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .profile__profession {
+        padding-bottom: 0;
+        padding-top: 13px;
+        grid-area: profession;
+    }
+}
