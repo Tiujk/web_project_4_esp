@@ -1,0 +1,30 @@
+.close-btn {
+    margin: 0;
+    padding: 0;
+    min-width: 26px;
+    max-height: 26px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: -47.62px;
+    right: 7.38px;
+    cursor: pointer;
+}
+
+/*720px*/
+@media screen and (min-width: 720px) {
+    .close-btn {
+        top: -30.28px;
+        right: -30.72px;
+    }
+}
+
+/*1280px*/
+@media screen and (min-width: 880px) {
+    .close-btn {
+        min-width: 40px;
+        max-height: 40px;
+        top: -44.28px;
+        right: -44.72px;
+    }
+}

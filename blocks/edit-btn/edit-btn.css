@@ -8,6 +8,13 @@
     align-items: center;
     background-color: transparent;
     align-self: center;
+    opacity: 1;
+    transition: opacity 0.3s linear;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    opacity: 0.6;
 }
 
 /*1280px*/
