@@ -8,4 +8,15 @@
     background-color: transparent;
     border: none;
     align-self: center;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+    cursor: pointer;
+}
+
+.like-btn:hover {
+    opacity: 0.5;
+}
+
+.like-btn:active {
+    
 }
