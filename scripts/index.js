@@ -1,8 +1,8 @@
 //Abrir formulario y cargar los campos con los datos del perfil
 
-let editButton = document.querySelector(".edit-btn");
+const editButton = document.querySelector(".edit-btn");
 
-let popup = document.querySelector(".popup");
+const popup = document.querySelector(".popup");
 
 let profileName = document.querySelector(".profile__name");
 
@@ -19,14 +19,14 @@ editButton.addEventListener("click", function() {
 });
 
 //Cerrar formulario
-let closeButton = document.querySelector(".close-btn");
+const closeButton = document.querySelector(".close-btn");
 
 closeButton.addEventListener("click", function() {
     popup.classList.toggle("popup_opened");
 });
 
 //Cambiar la info del perfil al dar "Guardar"
-let editForm = document.querySelector(".form");
+const editForm = document.querySelector(".form");
 
 editForm.addEventListener("submit", function(evt) {
     evt.preventDefault();
