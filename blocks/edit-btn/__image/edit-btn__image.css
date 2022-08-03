@@ -1,13 +1,13 @@
 .edit-btn__image {
-    margin: 0;
-    max-width: 7.5px;
-    max-height: 7.5px;
+  margin: 0;
+  max-width: 7.5px;
+  max-height: 7.5px;
 }
 
 /*1280px*/
 @media screen and (min-width: 720px) {
-    .edit-btn__image {
-        min-width: 10px;
-        max-height: 10px;
-    }
+  .edit-btn__image {
+    min-width: 10px;
+    max-height: 10px;
+  }
 }

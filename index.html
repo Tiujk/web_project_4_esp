@@ -1,122 +1,194 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./fonts/fonts.css"/>
-  <link rel="stylesheet" href="./index.css"/>
-  <title>Around The US</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Around The US</title>
+  </head>
 
-<body>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          class="header__logo"
+          src="./images/logo_header.svg"
+          alt="Logo Around the US"
+        />
+      </header>
 
-  <div class="page">
-
-    <header class="header">
-      <img class="header__logo" src="./images/logo_header.svg" alt="Logo Around the US">
-    </header>
-
-    <section class="popup">
-      <form class="form">
-        <button type="button" class="close-btn">
-          <img src="./images/close-btn.svg" alt="Una equis para cerrar" class="close-btn__image">
-        </button>
-        <h2 class="form__title">Editar perfil</h2>
-        <fieldset class="form__inputs">
-          <input type="text" class="form__name" placeholder="Nombre" required>
-          <input type="text" class="form__profession" placeholder="Acerca de mí" required>
-          <button type="submit" class="save-btn">Guardar</button>
-        </fieldset>
-      </form>
-    </section>
-
-    <main class="content">
-
-      <section class="profile">
-        <img src="./images/avatar-cousteau.jpeg" alt="Foto o avatar del usuario" class="profile__avatar">
-        <div class="profile__info">
-          <h1 class="profile__name">Jacques Cousteau</h1>
-          <button class="edit-btn">
-            <img src="./images/edit-btn.svg" alt="Un lápiz simulando escribir" class="edit-btn__image">
+      <section class="popup">
+        <form class="form">
+          <button type="button" class="close-btn">
+            <img
+              src="./images/close-btn.svg"
+              alt="Una equis para cerrar"
+              class="close-btn__image"
+            />
           </button>
-        </div>
-        <p class="profile__profession">Explorador</p>
-        <button class="add-btn">
-          <img src="./images/add-btn.svg" alt="Signo de más" class="add-btn__image">
-        </button>
+          <h2 class="form__title">Editar perfil</h2>
+          <fieldset class="form__inputs">
+            <input
+              type="text"
+              class="form__name"
+              placeholder="Nombre"
+              required
+            />
+            <input
+              type="text"
+              class="form__profession"
+              placeholder="Acerca de mí"
+              required
+            />
+            <button type="submit" class="save-btn">Guardar</button>
+          </fieldset>
+        </form>
       </section>
 
-      <section class="cards-gallery">
-        <div class="card">
-          <img src="./images/yosemite.jpg" alt="Paisaje del valle de Yosemite" class="card__image">
-          <div class="card__info">
-            <h2 class="card__name">Valle de Yosemite</h2>
-            <button class="like-btn">
-              <img src="./images/like-btn.svg" alt="Contorno de un corazón" class="like-btn__image">
+      <main class="content">
+        <section class="profile">
+          <img
+            src="./images/avatar-cousteau.jpeg"
+            alt="Foto o avatar del usuario"
+            class="profile__avatar"
+          />
+          <div class="profile__info">
+            <h1 class="profile__name">Jacques Cousteau</h1>
+            <button class="edit-btn">
+              <img
+                src="./images/edit-btn.svg"
+                alt="Un lápiz simulando escribir"
+                class="edit-btn__image"
+              />
             </button>
           </div>
-        </div>
+          <p class="profile__profession">Explorador</p>
+          <button class="add-btn">
+            <img
+              src="./images/add-btn.svg"
+              alt="Signo de más"
+              class="add-btn__image"
+            />
+          </button>
+        </section>
 
-        <div class="card">
-          <img src="./images/louise.jpg" alt="Paisaje del Lago Louise" class="card__image">
-          <div class="card__info">
-            <h2 class="card__name">Lago Louise</h2>
-            <button class="like-btn">
-              <img src="./images/like-btn.svg" alt="Contorno de un corazón" class="like-btn__image">
-            </button>
+        <section class="cards-gallery">
+          <div class="card">
+            <img
+              src="./images/yosemite.jpg"
+              alt="Paisaje del valle de Yosemite"
+              class="card__image"
+            />
+            <div class="card__info">
+              <h2 class="card__name">Valle de Yosemite</h2>
+              <button class="like-btn">
+                <img
+                  src="./images/like-btn.svg"
+                  alt="Contorno de un corazón"
+                  class="like-btn__image"
+                />
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div class="card">
-          <img src="./images/calvas.jpg" alt="Atardecer en las Montañas Calvas" class="card__image">
-          <div class="card__info">
-            <h2 class="card__name">Montañas Calvas</h2>
-            <button class="like-btn">
-              <img src="./images/like-btn.svg" alt="Contorno de un corazón" class="like-btn__image">
-            </button>
+          <div class="card">
+            <img
+              src="./images/louise.jpg"
+              alt="Paisaje del Lago Louise"
+              class="card__image"
+            />
+            <div class="card__info">
+              <h2 class="card__name">Lago Louise</h2>
+              <button class="like-btn">
+                <img
+                  src="./images/like-btn.svg"
+                  alt="Contorno de un corazón"
+                  class="like-btn__image"
+                />
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div class="card">
-          <img src="./images/latemar.jpg" alt="Noche estrellada en Latemar" class="card__image">
-          <div class="card__info">
-            <h2 class="card__name">Latemar</h2>
-            <button class="like-btn">
-              <img src="./images/like-btn.svg" alt="Contorno de un corazón" class="like-btn__image">
-            </button>
+          <div class="card">
+            <img
+              src="./images/calvas.jpg"
+              alt="Atardecer en las Montañas Calvas"
+              class="card__image"
+            />
+            <div class="card__info">
+              <h2 class="card__name">Montañas Calvas</h2>
+              <button class="like-btn">
+                <img
+                  src="./images/like-btn.svg"
+                  alt="Contorno de un corazón"
+                  class="like-btn__image"
+                />
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div class="card">
-          <img src="./images/vanoise.jpg" alt="Paisaje de Vanoise National Park" class="card__image">
-          <div class="card__info">
-            <h2 class="card__name">Vanoise National Park</h2>
-            <button class="like-btn">
-              <img src="./images/like-btn.svg" alt="Contorno de un corazón" class="like-btn__image">
-            </button>
+          <div class="card">
+            <img
+              src="./images/latemar.jpg"
+              alt="Noche estrellada en Latemar"
+              class="card__image"
+            />
+            <div class="card__info">
+              <h2 class="card__name">Latemar</h2>
+              <button class="like-btn">
+                <img
+                  src="./images/like-btn.svg"
+                  alt="Contorno de un corazón"
+                  class="like-btn__image"
+                />
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div class="card">
-          <img src="./images/braies.jpg" alt="Pequeño embarcadero al pie de las montañas en el Lago di Braies" class="card__image">
-          <div class="card__info">
-            <h2 class="card__name">Lago di Braies</h2>
-            <button class="like-btn">
-              <img src="./images/like-btn.svg" alt="Contorno de un corazón" class="like-btn__image">
-            </button>
+          <div class="card">
+            <img
+              src="./images/vanoise.jpg"
+              alt="Paisaje de Vanoise National Park"
+              class="card__image"
+            />
+            <div class="card__info">
+              <h2 class="card__name">Vanoise National Park</h2>
+              <button class="like-btn">
+                <img
+                  src="./images/like-btn.svg"
+                  alt="Contorno de un corazón"
+                  class="like-btn__image"
+                />
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
 
-    </main>
+          <div class="card">
+            <img
+              src="./images/braies.jpg"
+              alt="Pequeño embarcadero al pie de las montañas en el Lago di Braies"
+              class="card__image"
+            />
+            <div class="card__info">
+              <h2 class="card__name">Lago di Braies</h2>
+              <button class="like-btn">
+                <img
+                  src="./images/like-btn.svg"
+                  alt="Contorno de un corazón"
+                  class="like-btn__image"
+                />
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
 
-    <footer class="footer">
-      <p class="footer__copyright">© 2022 Alrededor de los EEUU</p>
-    </footer>
+      <footer class="footer">
+        <p class="footer__copyright">© 2022 Alrededor de los EEUU</p>
+      </footer>
+    </div>
 
-  </div>
-
-  <script src="./scripts/index.js"></script>
-
-</body>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>

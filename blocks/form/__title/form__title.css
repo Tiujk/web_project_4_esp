@@ -1,22 +1,22 @@
 .form__title {
-    margin: 0;
-    font-family: "Inter", "Helvetica", "Arial", sans-serif;
-    font-size: 18px;
-    font-weight: 900;
-    line-height: 1.22;
-    color: #000;
-    padding-left: 22px;
-    padding-top: 25px;
-    padding-bottom: 76px;
+  margin: 0;
+  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.22;
+  color: #000;
+  padding-left: 22px;
+  padding-top: 25px;
+  padding-bottom: 76px;
 }
 
 /*1280px*/
 @media screen and (min-width: 720px) {
-    .form__title {
-        font-size: 24px;
-        line-height: 1.2;
-        padding-left: 36px;
-        padding-top: 34px;
-        padding-bottom: 54px;
-    }
+  .form__title {
+    font-size: 24px;
+    line-height: 1.2;
+    padding-left: 36px;
+    padding-top: 34px;
+    padding-bottom: 54px;
+  }
 }

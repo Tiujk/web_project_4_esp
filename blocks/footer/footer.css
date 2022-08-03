@@ -1,16 +1,16 @@
 .footer {
-    margin: 0 auto;
-    max-width: 880px;
-    padding-bottom: 36px;
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
+  margin: 0 auto;
+  max-width: 880px;
+  padding-bottom: 36px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 880px) {
-    .footer {
-        justify-content: flex-start;
-        padding-bottom: 60px;
-        padding-top: 68px;
-    }
+  .footer {
+    justify-content: flex-start;
+    padding-bottom: 60px;
+    padding-top: 68px;
+  }
 }

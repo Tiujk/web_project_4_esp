@@ -1,18 +1,18 @@
 .profile__name {
-    margin: 0;
-    font-family: "Inter", "Helvetica", "Arial", sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.22;
-    color: #FFF;
-    padding-right: 10px;
+  margin: 0;
+  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.22;
+  color: #fff;
+  padding-right: 10px;
 }
 
 /*1280px*/
 @media screen and (min-width: 720px) {
-    .profile__name {
-        font-size: 42px;
-        line-height: 1.14;
-        padding-right: 18px;
-    }
+  .profile__name {
+    font-size: 42px;
+    line-height: 1.14;
+    padding-right: 18px;
+  }
 }
