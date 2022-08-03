@@ -4,13 +4,13 @@ const editButton = document.querySelector(".edit-btn");
 
 const popup = document.querySelector(".popup");
 
-let profileName = document.querySelector(".profile__name");
+const profileName = document.querySelector(".profile__name");
 
-let profileJob = document.querySelector(".profile__profession");
+const profileJob = document.querySelector(".profile__profession");
 
-let formName = document.querySelector(".form__name");
+const formName = document.querySelector(".form__name");
 
-let formJob = document.querySelector(".form__profession");
+const formJob = document.querySelector(".form__profession");
 
 editButton.addEventListener("click", function () {
   popup.classList.toggle("popup_opened");
