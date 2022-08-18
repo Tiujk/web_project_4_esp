@@ -1,0 +1,28 @@
+.create-btn {
+  margin: 0;
+  max-width: 100%;
+  min-height: 46px;
+  border: 0;
+  border-radius: 2px;
+  background-color: #000;
+  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: #fff;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*1280px*/
+@media screen and (min-width: 720px) {
+  .create-btn {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}

@@ -18,8 +18,8 @@
         />
       </header>
 
-      <section class="popup">
-        <form class="form">
+      <section class="edit-popup">
+        <form class="edit-form">
           <button type="button" class="close-btn">
             <img
               src="./images/close-btn.svg"
@@ -27,21 +27,49 @@
               class="close-btn__image"
             />
           </button>
-          <h2 class="form__title">Editar perfil</h2>
-          <fieldset class="form__inputs">
+          <h2 class="edit-form__title">Editar perfil</h2>
+          <fieldset class="edit-form__inputs">
             <input
               type="text"
-              class="form__name"
+              class="edit-form__name"
               placeholder="Nombre"
               required
             />
             <input
               type="text"
-              class="form__profession"
+              class="edit-form__profession"
               placeholder="Acerca de mí"
               required
             />
             <button type="submit" class="save-btn">Guardar</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="add-popup">
+        <form class="add-form">
+          <button type="button" class="close-btn">
+            <img
+              src="./images/close-btn.svg"
+              alt="Una equis para cerrar"
+              class="close-btn__image"
+            />
+          </button>
+          <h2 class="add-form__title">Nuevo Lugar</h2>
+          <fieldset class="add-form__inputs">
+            <input
+              type="text"
+              class="add-form__place"
+              placeholder="Título"
+              required
+            />
+            <input
+              type="text"
+              class="add-form__link"
+              placeholder="Enlace a la imagen"
+              required
+            />
+            <button type="submit" class="create-btn">Crear</button>
           </fieldset>
         </form>
       </section>
