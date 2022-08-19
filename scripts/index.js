@@ -1,3 +1,42 @@
+//Mostrar las 6 cartas iniciales al cargar la página
+const initialCards = [
+  {
+    name: "Valle de Yosemite",
+    link: "https://code.s3.yandex.net/web-code/yosemite.jpg",
+  },
+  {
+    name: "Lago Louise",
+    link: "https://code.s3.yandex.net/web-code/lake-louise.jpg",
+  },
+  {
+    name: "Montañas Calvas",
+    link: "https://code.s3.yandex.net/web-code/bald-mountains.jpg",
+  },
+  {
+    name: "Latemar",
+    link: "https://code.s3.yandex.net/web-code/latemar.jpg",
+  },
+  {
+    name: "Parque Nacional de la Vanoise",
+    link: "https://code.s3.yandex.net/web-code/vanoise.jpg",
+  },
+  {
+    name: "Lago di Braies",
+    link: "https://code.s3.yandex.net/web-code/lago.jpg",
+  },
+];
+const cardsGallery = document.querySelector(".cards-gallery");
+
+initialCards.forEach((item) => {
+  const cardTemplate = document.querySelector("#card-template").content;
+  const card = cardTemplate.querySelector(".card").cloneNode(true);
+  cardsGallery.append(card);
+  const cardName = card.querySelector(".card__name");
+  const cardLink = card.querySelector(".card__image");
+  cardName.textContent = item.name;
+  cardLink.src = item.link;
+});
+
 //Abrir formulario edit y cargar los campos con los datos del perfil
 const editButton = document.querySelector(".edit-btn");
 const editPopup = document.querySelector(".edit-popup");
@@ -34,15 +73,11 @@ editForm.addEventListener("submit", function (evt) {
 //Abrir formulario agregar
 const addButton = document.querySelector(".add-btn");
 const addPopup = document.querySelector(".add-popup");
-const cardName = document.querySelector(".card__name");
-const cardLink = document.querySelector(".card__image");
 const formPlace = document.querySelector(".add-form__place");
 const formLink = document.querySelector(".add-form__link");
 
 addButton.addEventListener("click", function () {
   addPopup.classList.toggle("add-popup_opened");
-  //formPlace.value = cardName.textContent;
-  //formLink.value = cardLink.textContent;
 });
 
 //Cerrar formulario agregar

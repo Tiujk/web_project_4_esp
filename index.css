@@ -33,6 +33,8 @@
 @import url(./blocks/cards-gallery/cards-gallery.css);
 @import url(./blocks/card/card.css);
 @import url(./blocks/card/__image/card__image.css);
+@import url(./blocks/remove-btn/remove-btn.css);
+@import url(./blocks/remove-btn/__image/remove-btn__image.css);
 @import url(./blocks/card/__info/card__info.css);
 @import url(./blocks/card/__name/card__name.css);
 @import url(./blocks/like-btn/like-btn.css);
