@@ -86,3 +86,18 @@ const addCloseButton = addPopup.querySelector(".close-btn");
 addCloseButton.addEventListener("click", function () {
   addPopup.classList.toggle("add-popup_opened");
 });
+
+//Agregar una nueva tarjeta con el botón "Crear"
+const addForm = document.querySelector(".add-form");
+
+addForm.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+  const cardTemplate = document.querySelector("#card-template").content;
+  const card = cardTemplate.querySelector(".card").cloneNode(true);
+  cardsGallery.prepend(card);
+  const cardName = card.querySelector(".card__name");
+  const cardLink = card.querySelector(".card__image");
+  cardName.textContent = formPlace.value;
+  cardLink.textContent = formLink.value;
+  addPopup.classList.toggle("add-popup_opened");
+});
