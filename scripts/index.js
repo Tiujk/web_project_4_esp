@@ -30,6 +30,9 @@ const cardsGallery = document.querySelector(".cards-gallery");
 initialCards.forEach((item) => {
   const cardTemplate = document.querySelector("#card-template").content;
   const card = cardTemplate.querySelector(".card").cloneNode(true);
+  card.querySelector(".like-btn").addEventListener("click", function (evt) {
+    evt.target.classList.toggle("like-btn_active");
+  });
   cardsGallery.append(card);
   const cardName = card.querySelector(".card__name");
   const cardLink = card.querySelector(".card__image");
@@ -94,10 +97,13 @@ addForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
   const cardTemplate = document.querySelector("#card-template").content;
   const card = cardTemplate.querySelector(".card").cloneNode(true);
+  card.querySelector(".like-btn").addEventListener("click", function (evt) {
+    evt.target.classList.toggle("like-btn_active");
+  });
   cardsGallery.prepend(card);
   const cardName = card.querySelector(".card__name");
   const cardLink = card.querySelector(".card__image");
   cardName.textContent = formPlace.value;
-  cardLink.textContent = formLink.value;
+  cardLink.src = formLink.value;
   addPopup.classList.toggle("add-popup_opened");
 });

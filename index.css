@@ -38,5 +38,6 @@
 @import url(./blocks/card/__info/card__info.css);
 @import url(./blocks/card/__name/card__name.css);
 @import url(./blocks/like-btn/like-btn.css);
+@import url(./blocks/like-btn/_active/like-btn_active.css);
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);
