@@ -1,4 +1,4 @@
-//Mostrar las 6 cartas iniciales al cargar la página activando botones like y remove
+//Mostrar las 6 cartas iniciales al cargar la página
 const initialCards = [
   {
     name: "Valle de Yosemite",
@@ -42,17 +42,17 @@ initialCards.forEach((item) => {
   const cardImage = card.querySelector(".card__image");
   const imagePopup = document.querySelector(".image-popup");
   cardImage.addEventListener("click", function (evt) {
-    //imagePopup.classList.toggle("edit-popup_opened");
+    //imagePopup.classList.toggle("image-popup_opened");
     evt.target = imagePopup.style.display = "flex";
     const landscapeLink = document.querySelector(".landscape-window__image");
     const landscapeTitle = document.querySelector(".landscape-window__title");
     landscapeLink.src = cardLink.src;
     landscapeTitle.textContent = cardName.textContent;
   });
-  //Cerrar formulario edit
+  //Cerrar popup de imagen
   const imageCloseButton = imagePopup.querySelector(".close-btn");
   imageCloseButton.addEventListener("click", function (evt) {
-    //imagePopup.classList.toggle("edit-popup_opened");
+    //imagePopup.classList.toggle("image-popup_opened");
     evt.target = imagePopup.style.display = "none";
   });
   cardsGallery.append(card);
@@ -137,7 +137,7 @@ addForm.addEventListener("submit", function (evt) {
     landscapeLink.src = cardLink.src;
     landscapeTitle.textContent = cardName.textContent;
   });
-  //Cerrar formulario edit
+  //Cerrar popup de imagen
   const imageCloseButton = imagePopup.querySelector(".close-btn");
   imageCloseButton.addEventListener("click", function (evt) {
     evt.target = imagePopup.style.display = "none";
