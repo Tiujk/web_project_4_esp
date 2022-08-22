@@ -38,6 +38,23 @@ initialCards.forEach((item) => {
   card.querySelector(".remove-btn").addEventListener("click", function (evt) {
     evt.target.closest(".card").remove();
   });
+  //Abrir y cerrar popup de imagen completa
+  const cardImage = card.querySelector(".card__image");
+  const imagePopup = document.querySelector(".image-popup");
+  cardImage.addEventListener("click", function (evt) {
+    //imagePopup.classList.toggle("edit-popup_opened");
+    evt.target = imagePopup.style.display = "flex";
+    const landscapeLink = document.querySelector(".landscape-window__image");
+    const landscapeTitle = document.querySelector(".landscape-window__title");
+    landscapeLink.src = cardLink.src;
+    landscapeTitle.textContent = cardName.textContent;
+  });
+  //Cerrar formulario edit
+  const imageCloseButton = imagePopup.querySelector(".close-btn");
+  imageCloseButton.addEventListener("click", function (evt) {
+    //imagePopup.classList.toggle("edit-popup_opened");
+    evt.target = imagePopup.style.display = "none";
+  });
   cardsGallery.append(card);
   const cardName = card.querySelector(".card__name");
   const cardLink = card.querySelector(".card__image");
@@ -109,6 +126,21 @@ addForm.addEventListener("submit", function (evt) {
   //Borrar tarjeta
   card.querySelector(".remove-btn").addEventListener("click", function (evt) {
     evt.target.closest(".card").remove();
+  });
+  //Abrir y cerrar popup de imagen completa
+  const cardImage = card.querySelector(".card__image");
+  const imagePopup = document.querySelector(".image-popup");
+  cardImage.addEventListener("click", function (evt) {
+    evt.target = imagePopup.style.display = "flex";
+    const landscapeLink = document.querySelector(".landscape-window__image");
+    const landscapeTitle = document.querySelector(".landscape-window__title");
+    landscapeLink.src = cardLink.src;
+    landscapeTitle.textContent = cardName.textContent;
+  });
+  //Cerrar formulario edit
+  const imageCloseButton = imagePopup.querySelector(".close-btn");
+  imageCloseButton.addEventListener("click", function (evt) {
+    evt.target = imagePopup.style.display = "none";
   });
   cardsGallery.prepend(card);
   const cardName = card.querySelector(".card__name");

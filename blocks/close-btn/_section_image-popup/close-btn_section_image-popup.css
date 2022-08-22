@@ -1,0 +1,16 @@
+.close-btn_section_image-popup {
+  min-width: 30px;
+  max-height: 30px;
+  top: -33px;
+  right: -33.5px;
+}
+
+/*1280px*/
+@media screen and (min-width: 720px) {
+  .close-btn_section_image-popup {
+    min-width: 40px;
+    max-height: 40px;
+    top: -45px;
+    right: -45.5px;
+  }
+}
