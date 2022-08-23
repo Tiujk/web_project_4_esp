@@ -26,6 +26,7 @@ const initialCards = [
   },
 ];
 const cardsGallery = document.querySelector(".cards-gallery");
+const imagePopup = document.querySelector(".image-popup");
 
 initialCards.forEach((item) => {
   const cardTemplate = document.querySelector("#card-template").content;
@@ -38,28 +39,26 @@ initialCards.forEach((item) => {
   card.querySelector(".remove-btn").addEventListener("click", function (evt) {
     evt.target.closest(".card").remove();
   });
-  //Abrir y cerrar popup de imagen completa
+  //Abrir popup de imagen completa
   const cardImage = card.querySelector(".card__image");
-  const imagePopup = document.querySelector(".image-popup");
   cardImage.addEventListener("click", function (evt) {
-    //imagePopup.classList.toggle("image-popup_opened");
-    evt.target = imagePopup.style.display = "flex";
+    imagePopup.classList.toggle("image-popup_opened");
     const landscapeLink = document.querySelector(".landscape-window__image");
     const landscapeTitle = document.querySelector(".landscape-window__title");
     landscapeLink.src = cardLink.src;
     landscapeTitle.textContent = cardName.textContent;
-  });
-  //Cerrar popup de imagen
-  const imageCloseButton = imagePopup.querySelector(".close-btn");
-  imageCloseButton.addEventListener("click", function (evt) {
-    //imagePopup.classList.toggle("image-popup_opened");
-    evt.target = imagePopup.style.display = "none";
   });
   cardsGallery.append(card);
   const cardName = card.querySelector(".card__name");
   const cardLink = card.querySelector(".card__image");
   cardName.textContent = item.name;
   cardLink.src = item.link;
+});
+
+//Cerrar popup de imagen
+const imageCloseButton = imagePopup.querySelector(".close-btn");
+imageCloseButton.addEventListener("click", function () {
+  imagePopup.classList.toggle("image-popup_opened");
 });
 
 //Abrir formulario edit y cargar los campos con los datos del perfil
@@ -72,8 +71,6 @@ const formJob = document.querySelector(".edit-form__profession");
 
 editButton.addEventListener("click", function () {
   editPopup.classList.toggle("edit-popup_opened");
-  document.querySelector(".edit-popup_opened").style.visibility = "visible";
-  document.querySelector(".edit-popup_opened").style.opacity = "1";
   formName.value = profileName.textContent;
   formJob.value = profileJob.textContent;
 });
@@ -127,20 +124,14 @@ addForm.addEventListener("submit", function (evt) {
   card.querySelector(".remove-btn").addEventListener("click", function (evt) {
     evt.target.closest(".card").remove();
   });
-  //Abrir y cerrar popup de imagen completa
+  //Abrir popup de imagen completa
   const cardImage = card.querySelector(".card__image");
-  const imagePopup = document.querySelector(".image-popup");
   cardImage.addEventListener("click", function (evt) {
-    evt.target = imagePopup.style.display = "flex";
+    imagePopup.classList.toggle("image-popup_opened");
     const landscapeLink = document.querySelector(".landscape-window__image");
     const landscapeTitle = document.querySelector(".landscape-window__title");
     landscapeLink.src = cardLink.src;
     landscapeTitle.textContent = cardName.textContent;
-  });
-  //Cerrar popup de imagen
-  const imageCloseButton = imagePopup.querySelector(".close-btn");
-  imageCloseButton.addEventListener("click", function (evt) {
-    evt.target = imagePopup.style.display = "none";
   });
   cardsGallery.prepend(card);
   const cardName = card.querySelector(".card__name");
