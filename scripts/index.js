@@ -25,34 +25,18 @@ const initialCards = [
     link: "https://code.s3.yandex.net/web-code/lago.jpg",
   },
 ];
+
 const cardsGallery = document.querySelector(".cards-gallery");
 const imagePopup = document.querySelector(".image-popup");
 
 initialCards.forEach((item) => {
-  const cardTemplate = document.querySelector("#card-template").content;
-  const card = cardTemplate.querySelector(".card").cloneNode(true);
-  //Activar/desactivar like
-  card.querySelector(".like-btn").addEventListener("click", function (evt) {
-    evt.target.classList.toggle("like-btn_active");
-  });
-  //Borrar tarjeta
-  card.querySelector(".remove-btn").addEventListener("click", function (evt) {
-    evt.target.closest(".card").remove();
-  });
-  //Abrir popup de imagen completa
-  const cardImage = card.querySelector(".card__image");
-  cardImage.addEventListener("click", function (evt) {
-    imagePopup.classList.toggle("image-popup_opened");
-    const landscapeLink = document.querySelector(".landscape-window__image");
-    const landscapeTitle = document.querySelector(".landscape-window__title");
-    landscapeLink.src = cardLink.src;
-    landscapeTitle.textContent = cardName.textContent;
-  });
-  cardsGallery.append(card);
-  const cardName = card.querySelector(".card__name");
-  const cardLink = card.querySelector(".card__image");
-  cardName.textContent = item.name;
-  cardLink.src = item.link;
+  const info = {
+    name: item.name,
+    link: item.link,
+    soyForm: false,
+  };
+
+  createCard(info);
 });
 
 //Cerrar popup de imagen
@@ -109,23 +93,41 @@ addCloseButton.addEventListener("click", function () {
   addPopup.classList.toggle("add-popup_opened");
 });
 
-//Agregar una nueva tarjeta con el botón "Crear", activando botones like y remove
+//Agregar una nueva tarjeta con el botón "Crear"
 const addForm = document.querySelector(".add-form");
 
 addForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
+
+  const info = {
+    name: formPlace.value,
+    link: formLink.value,
+    soyForm: true,
+  };
+
+  createCard(info);
+
+  addPopup.classList.toggle("add-popup_opened");
+});
+
+//Funcion para crear una tarjeta
+function createCard(info) {
   const cardTemplate = document.querySelector("#card-template").content;
   const card = cardTemplate.querySelector(".card").cloneNode(true);
-  //Activar/desactivar like
+
+  //Dar o quitar Like
   card.querySelector(".like-btn").addEventListener("click", function (evt) {
     evt.target.classList.toggle("like-btn_active");
   });
+
   //Borrar tarjeta
   card.querySelector(".remove-btn").addEventListener("click", function (evt) {
     evt.target.closest(".card").remove();
   });
-  //Abrir popup de imagen completa
+
+  //Abrir imagen en grande
   const cardImage = card.querySelector(".card__image");
+
   cardImage.addEventListener("click", function (evt) {
     imagePopup.classList.toggle("image-popup_opened");
     const landscapeLink = document.querySelector(".landscape-window__image");
@@ -133,10 +135,18 @@ addForm.addEventListener("submit", function (evt) {
     landscapeLink.src = cardLink.src;
     landscapeTitle.textContent = cardName.textContent;
   });
-  cardsGallery.prepend(card);
+
+  //Condicional sobre donde agregar la tarjeta
+  if (info.soyForm) {
+    cardsGallery.prepend(card);
+  } else {
+    cardsGallery.append(card);
+  }
+
+  //Asignar la info correspondiente a cada tarjeta
   const cardName = card.querySelector(".card__name");
   const cardLink = card.querySelector(".card__image");
-  cardName.textContent = formPlace.value;
-  cardLink.src = formLink.value;
-  addPopup.classList.toggle("add-popup_opened");
-});
+
+  cardName.textContent = info.name;
+  cardLink.src = info.link;
+}
