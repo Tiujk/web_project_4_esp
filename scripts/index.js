@@ -39,12 +39,6 @@ initialCards.forEach((item) => {
   createCard(info);
 });
 
-//Cerrar popup de imagen
-const imageCloseButton = imagePopup.querySelector(".close-btn");
-imageCloseButton.addEventListener("click", function () {
-  imagePopup.classList.toggle("image-popup_opened");
-});
-
 //Abrir formulario edit y cargar los campos con los datos del perfil
 const editButton = document.querySelector(".edit-btn");
 const editPopup = document.querySelector(".edit-popup");
@@ -91,6 +85,12 @@ const addCloseButton = addPopup.querySelector(".close-btn");
 
 addCloseButton.addEventListener("click", function () {
   addPopup.classList.toggle("add-popup_opened");
+});
+
+//Cerrar popup de imagen
+const imageCloseButton = imagePopup.querySelector(".close-btn");
+imageCloseButton.addEventListener("click", function () {
+  imagePopup.classList.toggle("image-popup_opened");
 });
 
 //Agregar una nueva tarjeta con el botón "Crear"
